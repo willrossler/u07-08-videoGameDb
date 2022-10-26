@@ -1,0 +1,8 @@
+{
+    "/echo":{
+        "target":"https://api.rawg.io",
+        "secure":true,
+        "changeOrigin":true,
+        "logLevel":"Debug"
+    }
+}

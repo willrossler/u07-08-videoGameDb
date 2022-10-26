@@ -1,0 +1,32 @@
+<div class="details">
+  <form (ngSubmit)="submit()" [formGroup]="detailForm">
+    <div class="game-banner">
+      <img
+        class="game-banner-img"
+        src="{{ game.background_image }}"
+        alt="background image"
+      />
+    </div>
+    <input formControlName="game_id" type="hidden" class="form-control" />
+    <input formControlName="img" type="hidden" class="form-control" />
+    <input formControlName="title" type="hidden" class="form-control" />
+    <input formControlName="user_id" type="hidden" class="form-control" />
+
+    <div class="game-content">
+      <div class="details-wrapper">
+        <div class="game-header">
+          <h1 class="game-header-title">{{ game.name }}</h1>
+          <h2 class="game-header-release-date">
+            Release: {{ game.released | date }}
+          </h2>
+          <p class="game-header-genres">
+            <span *ngFor="let genre of game.genres; let last = last"
+              >{{ genre.name }}<span *ngIf="!last">, </span></span
+            >
+          </p>
+          <button type="submit">Add Game to favorites</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<div class="search-container">
+  <h1>Profile:</h1>
+  <button (click)="navigateProfile()">{{ this.userInfo }}</button>>
+  <form class="search-form">
+    <span class="logo" routerLink="/">Recipe App</span>
+    <input
+      class="search-input"
+      name="search"
+      placeholder="Search for you favorite meals."
+    />
+    <button class="search-button" >Search</button>
+  </form>
+
+  <div class="login-register">
+    <button class="login-button" (click)="navigateLogin()">Log In</button>
+    <button class="signup-button" (click)="navigateRegister()">Sign Up</button>
+    <button class="logout-button" (click)="logout()">Log Out</button>
+  </div>
+</div>

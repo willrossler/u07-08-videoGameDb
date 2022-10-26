@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  margin-top: 60px;
+  padding-bottom: 70px;
+}
+
+.card {
+  background-color: #fff;
+  margin-top: 40px;
+  flex: 0 19%;
+  border-style: double;
+  border: 1px solid #ccc;
+}
+
+.wrap {
+  font-size: 18px;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-bottom: 2px solid #426e6b;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.white {
+  color: white;
+}
